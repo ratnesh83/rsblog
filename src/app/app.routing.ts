@@ -19,12 +19,15 @@ const routes: Routes = [
   },
   {
     path: '**',
+    redirectTo: 'not-found'
+  },
+  {
+    path: 'not-found',
     component: NotFoundComponent
   }
 ];
 
 @NgModule({
-  // useHash supports github.io demo page, remove in your app
   imports: [
     RouterModule.forRoot(routes, {
       scrollPositionRestoration: 'enabled'
