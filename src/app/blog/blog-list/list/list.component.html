@@ -1,3 +1,3 @@
 <app-left-nav [list]="list" (valueChange)="updateSubList($event)"></app-left-nav>
-<app-blog-list-content [updateData]="selectedTopicId"></app-blog-list-content>
+<app-blog-list-content [selectedTopicId]="selectedTopicId" [selectedSubTopicId]="selectedSubTopicId"></app-blog-list-content>
 <app-right-nav [list]="subList" (valueChange)="updateData($event)"></app-right-nav>

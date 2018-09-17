@@ -7,5 +7,6 @@ export const environment = {
     projectId: 'rs-blog-sr',
     storageBucket: 'rs-blog-sr.appspot.com',
     messagingSenderId: '250349128378'
-  }
+  },
+  apiUrl: ''
 };

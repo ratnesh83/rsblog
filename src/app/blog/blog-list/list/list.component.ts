@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ListComponent implements OnInit {
 
   // tslint:disable-next-line:max-line-length
+  selectedSubTopicId = 0;
   selectedTopicId = 0;
   subList = [];
   // tslint:disable-next-line:max-line-length
@@ -20,12 +21,13 @@ export class ListComponent implements OnInit {
 
   updateSubList(id: number) {
     console.log(id);
+    this.selectedTopicId = id;
     const index = this.list.findIndex((element) => element.id === id );
     console.log(index);
     this.subList = this.list[index].subTopics;
   }
 
   updateData(id) {
-    this.selectedTopicId = id;
+    this.selectedSubTopicId = id;
   }
 }

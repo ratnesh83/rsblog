@@ -1,18 +1,22 @@
-<nz-card style="width:300px;" [nzCover]="coverTemplate">
-  <nz-card-meta nzTitle="Card title" nzDescription="This is the description" [nzAvatar]="avatarTemplate"></nz-card-meta>
+<nz-card style="width:300px;" [nzCover]="coverTemplate" [nzActions]="[actionlike, actiondislike]">
+  <nz-card-meta [nzTitle]="data.title" [nzDescription]="data.description" [nzAvatar]="avatarTemplate"></nz-card-meta>
 </nz-card>
 <ng-template #avatarTemplate>
-  <nz-avatar nzSrc="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"></nz-avatar>
+  <nz-avatar [nzSrc]="data.thumbnail"></nz-avatar>
 </ng-template>
 <ng-template #coverTemplate>
-  <img alt="example" src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"/>
+  <img alt="example" [src]="data.profileImage"/>
 </ng-template>
-<!-- <ng-template #actionSetting>
-  <i class="anticon anticon-setting"></i>
+<ng-template #actionlike>
+  <i class="anticon anticon-like"></i>{{data.likes}}
 </ng-template>
-<ng-template #actionEdit>
-  <i class="anticon anticon-edit"></i>
+<ng-template #actiondislike>
+  <i class="anticon anticon-dislike"></i>{{data.dislikes}}
 </ng-template>
+<ng-template #nzDescription>
+  hihi
+</ng-template>
+<!--
 <ng-template #actionEllipsis>
   <i class="anticon anticon-ellipsis"></i>
 </ng-template> -->
