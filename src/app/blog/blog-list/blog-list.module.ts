@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, NgZone } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { BlogListRoutingModule } from './blog-list-routing.module';
@@ -7,11 +7,15 @@ import { RightNavComponent } from './list/right-nav/right-nav.component';
 import { LeftNavComponent } from './list/left-nav/left-nav.component';
 import { BlogListContentComponent } from './list/blog-list-content/blog-list-content.component';
 import { CommunicationService } from '../../shared/services/communication/communication.service';
+import { UtilityModule } from '../../shared/modules/utility/utility.module';
+import { NgZorroAntdModule } from 'ng-zorro-antd';
 
 @NgModule({
   imports: [
     CommonModule,
-    BlogListRoutingModule
+    BlogListRoutingModule,
+    UtilityModule,
+    NgZorroAntdModule
   ],
   providers: [CommunicationService],
   declarations: [ListComponent, RightNavComponent, LeftNavComponent, BlogListContentComponent]

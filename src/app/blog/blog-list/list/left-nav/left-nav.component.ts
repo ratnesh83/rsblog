@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-left-nav',
@@ -8,11 +8,16 @@ import { Component, OnInit, Input } from '@angular/core';
 export class LeftNavComponent implements OnInit {
 
   @Input() list;
+  @Output() valueChange = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
     console.log(this.list);
+  }
+
+  topicChanged(id) {
+    this.valueChange.emit(id);
   }
 
 }

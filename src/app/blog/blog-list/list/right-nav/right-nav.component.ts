@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { CommunicationService } from '../../../../shared/services/communication/communication.service';
 
 @Component({
@@ -9,14 +9,15 @@ import { CommunicationService } from '../../../../shared/services/communication/
 export class RightNavComponent implements OnInit {
 
   @Input() list;
+  @Output() valueChange = new EventEmitter();
 
   constructor(private communicationService: CommunicationService) { }
 
   ngOnInit() {
   }
 
-  changeTopic(id) {
-    // this.communicationService.topicChanged(id);
+  subTopicChanged(id) {
+    this.valueChange.emit(id);
   }
 
 }

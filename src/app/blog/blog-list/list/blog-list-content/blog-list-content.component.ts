@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-blog-list-content',
   templateUrl: './blog-list-content.component.html',
   styleUrls: ['./blog-list-content.component.css']
 })
-export class BlogListContentComponent implements OnInit {
+export class BlogListContentComponent {
 
-  constructor() { }
+  private _updateData;
 
-  ngOnInit() {
+  get item(): any {
+    return this._updateData;
   }
 
+  @Input()
+  set updateData(val: any) {
+    this._updateData = val;
+  }
+
+  constructor() {
+  }
 }
