@@ -35,7 +35,7 @@ export class BlogListContentComponent {
     dislikes: 75,
     profileImage: 'https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png',
     thumbnail: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description: 'lklk lklk lkl klkl klk lklk lk lk l kl kl k lk lk lk lk lk lkj kjk jk jk jk j kj k jk j k jk j kj k jk jk j kj kj kj k'
+    description: 'kjk jk jk jk j kj k jk j k jk j kj k jk jk j kj kj kj k'
   },
   {
     title: 'Lage title',
@@ -43,7 +43,71 @@ export class BlogListContentComponent {
     dislikes: 75,
     profileImage: 'https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png',
     thumbnail: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description: 'lklk lklk lkl klkl klk lklk lk lk l kl kl k lk lk lk lk lk lkj kjk jk jk jk j kj k jk j k jk j kj k jk jk j kj kj kj k'
+    description: 'kj kjk jk jk jk j kj k jk j k jk j kj k jk jk j kj kj kj k'
+  },
+  {
+    title: 'Lage title',
+    likes: 49,
+    dislikes: 75,
+    profileImage: 'https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png',
+    thumbnail: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+    description: ' lk lk lkj kjk jk jk jk j kj k jk j k jk j kj k jk jk j kj kj kj k'
+  },
+  {
+    title: 'Lage title',
+    likes: 49,
+    dislikes: 75,
+    profileImage: 'https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png',
+    thumbnail: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+    description: 'k lk lk lkj kjk jk jk jk j kj k jk j k jk j kj k jk jk j kj kj kj k'
+  },
+  {
+    title: 'Lage title',
+    likes: 49,
+    dislikes: 75,
+    profileImage: 'https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png',
+    thumbnail: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+    description: ' lk lk lkj kjk jk jk jk j kj k jk j k jk j kj k jk jk j kj kj kj k'
+  },
+  {
+    title: 'Lage title',
+    likes: 49,
+    dislikes: 75,
+    profileImage: 'https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png',
+    thumbnail: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+    description: ' lk lk lkj kjk jk jk jk j kj k jk j k jk j kj k jk jk j kj kj kj k'
+  },
+  {
+    title: 'Lage title',
+    likes: 49,
+    dislikes: 75,
+    profileImage: 'https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png',
+    thumbnail: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+    description: 'lk lk lkj kjk jk jk jk j kj k jk j k jk j kj k jk jk j kj kj kj k'
+  },
+  {
+    title: 'Lage title',
+    likes: 49,
+    dislikes: 75,
+    profileImage: 'https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png',
+    thumbnail: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+    description: 'k lk lkj kjk jk jk jk j kj k jk j k jk j kj k jk jk j kj kj kj k'
+  },
+  {
+    title: 'Lage title',
+    likes: 49,
+    dislikes: 75,
+    profileImage: 'https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png',
+    thumbnail: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+    description: ' lFDE lk lkj kjk jk jk jk j kj k jk j k jk j kj k jk jk j kj kj kj k'
+  },
+  {
+    title: 'Lage title',
+    likes: 49,
+    dislikes: 75,
+    profileImage: 'https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png',
+    thumbnail: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+    description: 'k lk lk lkj kjk jk jk jk j kj k jk j k jk j kj k jk jk j kj kj kj k'
   }];
 
   constructor() {

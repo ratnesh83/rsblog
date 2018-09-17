@@ -1,4 +1,4 @@
-<nz-card style="width:300px;" [nzCover]="coverTemplate" [nzActions]="[actionlike, actiondislike]">
+<nz-card style="width:230px;" [nzBodyStyle]="{'font-size':'12px'}" [nzCover]="coverTemplate" [nzActions]="[actionlike, actiondislike]">
   <nz-card-meta [nzTitle]="data.title" [nzDescription]="data.description" [nzAvatar]="avatarTemplate"></nz-card-meta>
 </nz-card>
 <ng-template #avatarTemplate>
@@ -8,10 +8,10 @@
   <img alt="example" [src]="data.profileImage"/>
 </ng-template>
 <ng-template #actionlike>
-  <i class="anticon anticon-like"></i>{{data.likes}}
+  <i class="anticon anticon-like"></i><p class="count">{{data.likes}}</p>
 </ng-template>
 <ng-template #actiondislike>
-  <i class="anticon anticon-dislike"></i>{{data.dislikes}}
+  <i class="anticon anticon-dislike"></i><p class="count">{{data.dislikes}}</p>
 </ng-template>
 <ng-template #nzDescription>
   hihi
