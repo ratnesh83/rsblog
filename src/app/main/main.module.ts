@@ -5,6 +5,7 @@ import { MainRoutingModule } from './main-routing.module';
 import { MainComponent } from './main.component';
 import { HomeComponent } from './home/home.component';
 import { UtilityModule } from '../shared/modules/utility/utility.module';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   imports: [
@@ -12,6 +13,6 @@ import { UtilityModule } from '../shared/modules/utility/utility.module';
     MainRoutingModule,
     UtilityModule
   ],
-  declarations: [MainComponent, HomeComponent]
+  declarations: [MainComponent, HomeComponent, RegisterComponent]
 })
 export class MainModule { }
