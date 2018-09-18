@@ -8,3 +8,8 @@
 .ant-card-meta-title{
     font-size: 12px;
 }
+
+.ant-card-actions > li{
+    margin-top: 5px;
+    margin-bottom: 4px;
+}
