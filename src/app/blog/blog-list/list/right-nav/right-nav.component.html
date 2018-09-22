@@ -1,5 +1,5 @@
 <ul nz-menu [nzMode]="'inline'" style="height:100%">
-    <li nz-menu-item *ngFor="let item of list">
+    <li nz-menu-item *ngFor="let item of list" (click)="subTopicChanged(item.id)">
         <span>
             <span class="nav-text">{{item.name}}</span>
         </span>

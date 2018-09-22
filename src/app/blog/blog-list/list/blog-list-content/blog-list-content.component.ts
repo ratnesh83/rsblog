@@ -19,6 +19,12 @@ export class BlogListContentComponent implements OnInit {
   @Input()
   set selectedTopicId(val: any) {
     this._selectedTopicId = val;
+    this.spinner.show();
+
+    setTimeout(() => {
+        /** spinner ends after 5 seconds */
+        this.spinner.hide();
+    }, 5000);
   }
 
   private _selectedSubTopicId;
@@ -30,6 +36,12 @@ export class BlogListContentComponent implements OnInit {
   @Input()
   set selectedSubTopicId(val: any) {
     this._selectedSubTopicId = val;
+    this.spinner.show();
+
+    setTimeout(() => {
+        /** spinner ends after 5 seconds */
+        this.spinner.hide();
+    }, 1000);
   }
 
   blogList = [{

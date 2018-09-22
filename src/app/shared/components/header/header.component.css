@@ -6,6 +6,10 @@
     margin: 16px 24px 16px 0;
     float: left;
   }
-  li{
+  .li{
       float: right!important;
+  }
+  :host ::ng-deep .ant-btn {
+    margin-right: 8px;
+    margin-bottom: 8px;
   }

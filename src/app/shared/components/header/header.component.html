@@ -1,8 +1,27 @@
 <nz-header style="padding: 0; ">
   <div class="logo"></div>
   <ul nz-menu [nzMode]="'horizontal'" style="line-height: 64px;background: #c8d6e5; padding-right: 10px;">
-    <li>
-      <img src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" alt="" style="height: 45px; width: 45px; border-radius: 50%; background: white;">
+    <li class="li">
+      <div>
+        <nz-dropdown [nzPlacement]="'bottomRight'">
+          <img nz-dropdown src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" alt="" style="height: 45px; width: 45px; border-radius: 50%; background: white;">
+          <ul nz-menu>
+            <li nz-menu-item (click)="log('1st menu item')">
+              <i class="anticon anticon-user"></i>Profile
+            </li>
+            <li nz-menu-item (click)="log('2nd menu item')">
+              <i class="anticon anticon-user"></i>My Blogs
+            </li>
+            <li nz-menu-item (click)="log('3rd menu item')">
+              <i class="anticon anticon-user"></i>Create a blog
+            </li>
+            <li nz-menu-item (click)="log('3rd menu item')">
+              <i class="anticon anticon-user"></i>Logout
+            </li>
+          </ul>
+        </nz-dropdown>
+      </div>
+
     </li>
   </ul>
 </nz-header>
