@@ -1,8 +1,11 @@
 .list{
     display: inline-flex;
-    margin: 20px 20px 20px 20px;
+    margin: 10px 20px 10px 20px;
     text-align: unset;
+    
 }
 .main{
     text-align: center;
+    overflow: scroll;
 }
+

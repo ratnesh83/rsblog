@@ -1,3 +1,7 @@
-<div *ngFor="let item of list" (click)="subTopicChanged(item.id)">
-  {{item.name}}
-</div>
+<ul nz-menu [nzMode]="'inline'" style="height:100%">
+    <li nz-menu-item *ngFor="let item of list">
+        <span>
+            <span class="nav-text">{{item.name}}</span>
+        </span>
+    </li>
+</ul>

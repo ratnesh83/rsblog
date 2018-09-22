@@ -10,9 +10,8 @@ import { NgZorroAntdModule, NZ_I18N, en_US } from 'ng-zorro-antd';
 import en from '@angular/common/locales/en';
 import { registerLocaleData } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { NgxSpinnerModule } from 'ngx-spinner';
 registerLocaleData(en);
-
-
 
 
 @NgModule({
@@ -26,7 +25,8 @@ registerLocaleData(en);
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    NgZorroAntdModule
+    NgZorroAntdModule,
+    NgxSpinnerModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

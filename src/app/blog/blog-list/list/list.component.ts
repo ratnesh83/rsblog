@@ -12,7 +12,7 @@ export class ListComponent implements OnInit {
   selectedTopicId = 0;
   subList = [];
   // tslint:disable-next-line:max-line-length
-  list = [{ topicName: 'tech', id: 1, subTopics: [{ name: 'cs', id: 11 }, { name: 'node', id: 12 }, { name: 'kk', id: 13 }] }, { topicName: 'cook', id: 2, subTopics: [{ name: 'food', id: 21 }, { name: 'chilli', id: 22 }, { name: 'kkklkl', id: 23 }] }];
+  list = [{ topicName: 'Technology', id: 1, subTopics: [{ name: 'Java', id: 11 }, { name: 'Node.js', id: 12 }, { name: 'Angular', id: 13 }, { name: 'Others', id: 12 }] }, { topicName: 'Sports', id: 2, subTopics: [{ name: 'Cricket', id: 21 }, { name: 'FootBall', id: 22 }, { name: 'Others', id: 23 }] }];
 
   constructor() { }
 

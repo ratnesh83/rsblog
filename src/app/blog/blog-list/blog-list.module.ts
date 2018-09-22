@@ -9,13 +9,15 @@ import { BlogListContentComponent } from './list/blog-list-content/blog-list-con
 import { CommunicationService } from '../../shared/services/communication/communication.service';
 import { UtilityModule } from '../../shared/modules/utility/utility.module';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 @NgModule({
   imports: [
     CommonModule,
     BlogListRoutingModule,
     UtilityModule,
-    NgZorroAntdModule
+    NgZorroAntdModule,
+    NgxSpinnerModule
   ],
   providers: [CommunicationService],
   declarations: [ListComponent, RightNavComponent, LeftNavComponent, BlogListContentComponent]

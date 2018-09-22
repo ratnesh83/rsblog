@@ -1,11 +1,14 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { NgxSpinnerService } from 'ngx-spinner';
+
 
 @Component({
   selector: 'app-blog-list-content',
   templateUrl: './blog-list-content.component.html',
   styleUrls: ['./blog-list-content.component.css']
 })
-export class BlogListContentComponent {
+export class BlogListContentComponent implements OnInit {
+
 
   private _selectedTopicId;
 
@@ -110,6 +113,15 @@ export class BlogListContentComponent {
     description: 'k lk lk lkj kjk jk jk jk j kj k jk j k jk j kj k jk jk j kj kj kj k'
   }];
 
-  constructor() {
+  constructor(private spinner: NgxSpinnerService) {
+  }
+
+  ngOnInit(): void {
+    this.spinner.show();
+
+    setTimeout(() => {
+        /** spinner ends after 5 seconds */
+        this.spinner.hide();
+    }, 5000);
   }
 }

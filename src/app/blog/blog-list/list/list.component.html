@@ -1,3 +1,15 @@
-<app-left-nav [list]="list" (valueChange)="updateSubList($event)"></app-left-nav>
-<app-blog-list-content [selectedTopicId]="selectedTopicId" [selectedSubTopicId]="selectedSubTopicId"></app-blog-list-content>
-<app-right-nav [list]="subList" (valueChange)="updateData($event)"></app-right-nav>
+<nz-layout class="layout" style="height: calc(100% - 100px)">
+    <nz-content style="padding:0 0px;height: 100%;">
+        <nz-layout style="padding:24px 0; background: #fff; height: 100%;">
+            <nz-sider [nzWidth]="200" style="background:#fff">
+                <app-left-nav [list]="list" (valueChange)="updateSubList($event)"></app-left-nav>
+            </nz-sider>
+            <nz-content style="padding: 0 0px; min-height: 280px;">
+                    <app-blog-list-content [selectedTopicId]="selectedTopicId" [selectedSubTopicId]="selectedSubTopicId"></app-blog-list-content>
+            </nz-content>
+            <nz-sider [nzWidth]="200" style="background:#fff; border-left: 1px solid #e8e8e8;">
+                <app-right-nav [list]="subList" (valueChange)="updateData($event)"></app-right-nav>
+            </nz-sider>
+        </nz-layout>
+    </nz-content>
+</nz-layout>
