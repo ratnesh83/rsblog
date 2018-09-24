@@ -11,6 +11,7 @@ import en from '@angular/common/locales/en';
 import { registerLocaleData } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { CommunicationService } from './shared/services/communication/communication.service';
 registerLocaleData(en);
 
 
@@ -28,7 +29,7 @@ registerLocaleData(en);
     NgZorroAntdModule,
     NgxSpinnerModule
   ],
-  providers: [{ provide: NZ_I18N, useValue: en_US }],
+  providers: [{ provide: NZ_I18N, useValue: en_US }, CommunicationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

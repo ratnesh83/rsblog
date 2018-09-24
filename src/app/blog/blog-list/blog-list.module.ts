@@ -19,7 +19,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     NgZorroAntdModule,
     NgxSpinnerModule
   ],
-  providers: [CommunicationService],
+  providers: [],
   declarations: [ListComponent, RightNavComponent, LeftNavComponent, BlogListContentComponent]
 })
 export class BlogListModule { }

@@ -1,4 +1,7 @@
 <ul nz-menu [nzMode]="'inline'" style="height:100%">
+    <li style="text-align: center;margin: 10px auto 30px auto;">
+        <h3>SubCategory</h3>
+    </li>
     <li nz-menu-item *ngFor="let item of list" (click)="subTopicChanged(item.id)">
         <span>
             <span class="nav-text">{{item.name}}</span>

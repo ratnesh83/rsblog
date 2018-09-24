@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CommunicationService } from '../../services/communication/communication.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+
+  message: any;
+  subscription: Subscription;
+  config: any;
+
+  constructor(private communicationService: CommunicationService) {
+    this.subscription = this.communicationService.getHeader().subscribe((config => {
+      console.log(config);
+      this.config = config;
+    }));
+  }
 
   ngOnInit() {
   }

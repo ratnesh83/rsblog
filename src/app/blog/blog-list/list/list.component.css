@@ -1,1 +1,23 @@
+.mobile{
+    text-align: center;
+    background: white;
+    padding-top: 10px;
+}
 
+.cat-btn{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.searchBox{
+    width: 220px;
+    margin: auto;
+}
+
+.searchOuter{
+    padding: 8px 0 8px 0;
+}
+
+.hideSection{
+    float: right;
+}
