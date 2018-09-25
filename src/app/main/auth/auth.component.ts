@@ -8,7 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class AuthComponent implements OnInit {
 
-  private index;
+  index;
   constructor(private activatedRouter: ActivatedRoute, private router: Router) {
   }
 
