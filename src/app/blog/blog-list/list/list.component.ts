@@ -20,15 +20,9 @@ export class ListComponent implements OnInit {
 
   ngOnInit() {
     this.communicationService.sendHeader({
-      config: {
-        imgDropDown: [
-          { text: 'profile', url: ''},
-          { text: 'profile', url: ''},
-          { text: 'profile', url: ''},
-          { text: 'profile', url: ''},
-          { text: 'profile', url: ''},
-      ]
-      }
+        profile: true,
+        blogs: false,
+        createBlog: true
     });
   }
 

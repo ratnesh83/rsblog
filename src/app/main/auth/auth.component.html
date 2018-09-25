@@ -1,0 +1,14 @@
+<div class="auth">
+  <div class="auth-inner">
+    <nz-card style="width: 100%;">
+      <nz-card-tab>
+        <nz-tabset nzSize="large" [(nzSelectedIndex)]="index">
+          <nz-tab nzTitle="Sign In"></nz-tab>
+          <nz-tab nzTitle="Sign Up"></nz-tab>
+        </nz-tabset>
+      </nz-card-tab>
+      <app-signin *ngIf="index == 0"></app-signin>
+      <app-signup *ngIf="index == 1"></app-signup>
+    </nz-card>
+  </div>
+</div>

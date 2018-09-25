@@ -14,3 +14,10 @@
     margin-right: 8px;
     margin-bottom: 8px;
   }
+  .menu>li{
+    padding: 10px auto 10px auto;
+  }
+  .menu{
+    padding: 10px;
+    border-radius: 5px;
+  }
