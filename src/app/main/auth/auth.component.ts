@@ -1,10 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-auth',
   templateUrl: './auth.component.html',
-  styleUrls: ['./auth.component.css']
+  styleUrls: ['./auth.component.css'],
+  encapsulation: ViewEncapsulation.None
+
 })
 export class AuthComponent implements OnInit {
 
@@ -21,5 +23,13 @@ export class AuthComponent implements OnInit {
         this.index = 0;
       }
     });
+  }
+
+  goToSignUpTab() {
+    this.index = 1;
+  }
+
+  goToSignInTab() {
+    this.index = 0;
   }
 }

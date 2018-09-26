@@ -9,4 +9,7 @@
     width: 90%;
 }
 
+.ant-card-body{
+    height: calc(100% - 54px);
+}
 

@@ -1,14 +1,16 @@
-<div class="auth">
-  <div class="auth-inner">
-    <nz-card style="width: 100%;">
+<div class="auth" style="height: calc(100% - 50px);">
+  <div class="auth-inner" style="height: 100%;">
+    <nz-card style="width: 100%; height: 100%;">
       <nz-card-tab>
         <nz-tabset nzSize="large" [(nzSelectedIndex)]="index">
           <nz-tab nzTitle="Sign In"></nz-tab>
           <nz-tab nzTitle="Sign Up"></nz-tab>
         </nz-tabset>
       </nz-card-tab>
-      <app-signin *ngIf="index == 0"></app-signin>
-      <app-signup *ngIf="index == 1"></app-signup>
+      <nz-content style="height: 100%;overflow: scroll;">
+        <app-signin *ngIf="index == 0" (changeTab)="goToSignUpTab()"></app-signin>
+        <app-signup *ngIf="index == 1" (changeTab)="goToSignInTab()"></app-signup>
+      </nz-content>
     </nz-card>
   </div>
 </div>
